@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page Under Construction</title>
+    <style>
+        .subPar {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            /* Allow items to wrap */
+        }
+
+        .subPar-info {
+            max-width: 800px;
+            /* Limit the width of the text */
+            padding: 10px;
+        }
+
+        .avero {
+            font-size: 200px;
+        }
+
+        .infra {
+            font-size: 75px;
+        }
+
+        #hero {
+            height: 800px;
+        }
+
+        @media (max-width: 768px) {
+            .avero {
+                font-size: 50px;
+            }
+
+            .infra {
+                font-size: 50px;
+            }
+
+            #hero {
+                height: 400px;
+            }
+        }
+        .carousel-control-prev,
+        .carousel-control-next {
+            filter: invert(100%);
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: auto;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #127bcb;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        .spinner {
+            margin: 20px auto;
+            width: 40px;
+            height: 40px;
+            border: 4px solid #127bcb;
+            border-top: 4px solid #080808;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Web Page Under Construction</h1>
+        <p>We're working hard to bring you a new and improved experience. Please check back soon!</p>
+        <div class="spinner"></div>
+    </div>
+</body>
+</html>

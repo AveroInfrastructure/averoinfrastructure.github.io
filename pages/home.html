@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+    <style>
+        .subPar {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            /* Allow items to wrap */
+        }
+
+        .subPar-info {
+            max-width: 800px;
+            /* Limit the width of the text */
+            padding: 10px;
+        }
+
+        .avero {
+            font-size: 200px;
+        }
+
+        .infra {
+            font-size: 75px;
+        }
+
+        #hero {
+            height: 800px;
+        }
+
+        @media (max-width: 768px) {
+            .avero {
+                font-size: 50px;
+            }
+
+            .infra {
+                font-size: 50px;
+            }
+
+            #hero {
+                height: 400px;
+            }
+        }
+        .carousel-control-prev,
+        .carousel-control-next {
+            filter: invert(100%);
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: auto;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="hero" class="col-12 d-flex justify-content-center"
+        style="background-image: url('assets/hero.jpg'); background-size:100vw;">
+        <div class="mt-5">
+            <h1 class="mt-5 text-white avero" style="font-family: 'Anton SC', sans-serif;">AVERO</h1>
+            <h1 class="mb-5 text-white infra" style="font-family: 'Anton SC', sans-serif;">INFRASTRUCTURE</h1>
+            <button id="btnAbout" class="mt-5 col-6 offset-3 btn btn-primary" style="background-color: #0e3887;">About
+                Us</button>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <h2>Avero Infrastructure </h2>
+        <p>At Avero Infrastructure, we deliver outcomes by simplifying systems to require little or no manual intervention, 
+            minimizing the strategic cost of IT, and automating processes for maximum efficiency. Our mission is to streamline your 
+            infrastructure, making it easier to manage and significantly more efficient. By focusing on these core principles, we ensure 
+            your technology investments are optimized to their fullest potential. Additionally, we prioritize mitigating the risks inherent 
+            in data management, so your valuable information is always properly cared for and secure. With our expert solutions, your IT 
+            operations become seamless and effective, allowing you to focus on your core business goals without the burden of complex 
+            technical issues. Trust Avero Infrastructure to transform your IT landscape and drive your success.</p>
+    </div>
+    <script>
+        $('#btnAbout').on('click', function () {
+            $('#content').load('pages/about.html');
+        })
+    </script>
+</body>
+
+</html>

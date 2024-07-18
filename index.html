@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avero Infrastructure</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/index.css">
+    <style>
+        body {
+            background-image: url('assets/website_background_v2.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0; /* Remove default margin */
+        }
+
+        footer {
+            background-color: #0e3887;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <img src="assets/AI_logo.png" style="width: 100px; height: 65px;">
+        <a class="navbar-brand" href="#" style="color: #0e3887;">We Deliver Outcomes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a href="" data-url="pages/home.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" data-url="pages/about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" data-url="pages/services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" data-url="pages/team.html" class="nav-link">Meet the Team</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" data-url="pages/fiber.html" class="nav-link">Fiber Crew</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" data-url="pages/testimonials.html" class="nav-link">Customer Testimonials</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="content">
+    </div>
+
+    <footer class="text-center py-4 mt-5">
+        <p>&copy; 2024 Avero Infastructure. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#content').load('pages/home.html');
+
+            $('.nav-link').click(function (e) {
+                e.preventDefault();
+                $('#content').load($(this).data('url'));
+            });
+        });
+    </script>
+</body>
+
+</html>
