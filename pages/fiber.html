@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Page Under Construction</title>
+    <title>Meet The Team</title>
     <style>
-        .subPar {
+        .team-member {
             display: flex;
             align-items: center;
             margin-bottom: 20px;
@@ -13,90 +14,164 @@
             /* Allow items to wrap */
         }
 
-        .subPar-info {
+        .team-member-info {
             max-width: 800px;
             /* Limit the width of the text */
             padding: 10px;
         }
-
-        .avero {
-            font-size: 200px;
-        }
-
-        .infra {
-            font-size: 75px;
-        }
-
-        #hero {
-            height: 800px;
+        .team-member img {
+            width: 200px;
+            height: 200px;
+            /* Ensure all images have the same size */
+            border-radius: 50%;
+            /* Make the image round */
+            margin-right: 20px;
+            /* Add space between the image and text */
         }
 
         @media (max-width: 768px) {
-            .avero {
-                font-size: 50px;
+            .team-member {
+                flex-direction: column;
+                /* Stack vertically on smaller screens */
+                align-items: center;
             }
 
-            .infra {
-                font-size: 50px;
+            .team-member-info {
+                text-align: center;
+                /* Center text for better readability */
+                max-width: 100%;
+                /* Allow full width for smaller screens */
             }
 
-            #hero {
-                height: 400px;
+            .service-card {
+                margin-bottom: 20px;
             }
-        }
-        .carousel-control-prev,
-        .carousel-control-next {
-            filter: invert(100%);
-        }
-
-        .carousel-control-prev,
-        .carousel-control-next {
-            width: auto;
-            justify-content: center;
-            align-items: center;
-            display: flex;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            text-align: center;
-            padding: 50px;
-        }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        h1 {
-            color: #127bcb;
-        }
-        p {
-            font-size: 1.2em;
-        }
-        .spinner {
-            margin: 20px auto;
-            width: 40px;
-            height: 40px;
-            border: 4px solid #127bcb;
-            border-top: 4px solid #080808;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+    
+            .service-card .card-body {
+                text-align: center;
+            }
+            
         }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <h1>Web Page Under Construction</h1>
-        <p>We're working hard to bring you a new and improved experience. Please check back soon!</p>
-        <div class="spinner"></div>
+    <div class="container mt-5">
+        <h1 class="mb-5">Meet The Team</h1>
+
+        <div class="team-member mt-5">
+            <img src="assets/profiles/Fiber/ZMonday.png" alt="Zen Monday">
+            <div class="team-member-info">
+                <h3>Zen Monday - Fiber Manager</h3>
+                <p>Zen has been apart of Avero Infrastructure for almost 7 years now. He has 
+                    been able to complete many project and was promoted to manager of the 
+                    team for his great work. He’s a very valuable member of our Avero 
+                    Infrastructure team and we are very grateful to have him!  </p>
+            </div>
+        </div>
+        <div class="team-member mt-5">
+            <img src="assets/profiles/Fiber/MHuskey.png" alt="Mike Huskey">
+            <div class="team-member-info">
+                <h3>Mike Huskey - Fiber Technician </h3>
+                <p>Mike has been a great addition to our team. He’s a very hard worker 
+                    and always does a great job! He’s very personable and always has a 
+                    joke to tell you. We are very happy have him on our team and we’re 
+                    looking forward to seeing and the great work he’ll do! 
+                </p>
+            </div>
+        </div>
+        <div class="team-member mt-5">
+            <img src="assets/profiles/Fiber/WLacroix.png" alt="William Lacroix">
+            <div class="team-member-info">
+                <h3>William Lacroix - Fiber Technician</h3>
+                <p>William started with Avero Infrastructure 3 years ago and has made 
+                    great progress into his Fiber career. He’s shown a dedication to 
+                    installing fiber and learning everything is takes to be apart of 
+                    this team. We are excited to see all the great things he will 
+                    accomplish!  </p>
+            </div>
+        </div>
     </div>
+
+    <div class="container mt-5">
+        <h1 class="mb-5">Our Services</h1>
+
+        <p>Need to say something nice about the fiber crew and what they do. </p>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card service-card">
+                        <div class="card-header">
+                            <h5 class="card-title">Fiber Engineering and Design</h5>
+                        </div>
+                        <img src="assets/Services/infrast.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">Need to add something nice.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card">
+                        <img src="assets/Services/network.jpeg" class="card-img-top">
+                        <div class="card-header">
+                            <h5 class="card-title">Aerial Construction </h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Need to add somehting nice.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card">
+                        <div class="card-header">
+                            <h5 class="card-title">Undergound Constuction</h5>
+                        </div>
+                        <img src="assets/Services/cyber.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">Need to add something nice. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card service-card">
+                        <img src="assets/Services/managed.jpg" class="card-img-top">
+                        <div class="card-header">
+                            <h5 class="card-title">Fiber Splicing and Testing</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Need to add something nice. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card">
+                        <div class="card-header">
+                            <h5 class="card-title">Maintenance and Emergency Restoration</h5>
+                        </div>
+                        <img src="assets/Services/help.jpeg" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">Need to add something nice. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card">
+                        <img src="assets/Services/cloud.jpg" class="card-img-top">
+                        <div class="card-header">
+                            <h5 class="card-title">Structured Cabling </h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Need to add something nice. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
 </body>
+
 </html>
